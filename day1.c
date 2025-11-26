@@ -1,9 +1,35 @@
-# Input two numbers from the user
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
+// Q1: Write a program to input two numbers and display their sum.
 
-# Calculate the sum
-sum = num1 + num2
+#include <stdio.h>
 
-# Display the result
-print("The sum of", num1, "and", num2, "is", sum)
+int main() {
+    int a, b,sum;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    sum = a + b;
+
+    printf("Sum = %d\n", sum);
+
+    return 0;
+}
+
+//Q2: Write a program to input two numbers and display their sum, difference, product, and quotient.
+
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    printf("Sum=%d, Diff=%d, Product=%d, Quotient=%d\n", 
+            a + b,     
+            a - b,      
+            a * b,      
+            a / b);   
+
+    return 0;
+}
